@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assest/style.css">
+</head>
+<body>
+    <div class="card-container">
+    
+    <header class="header">
+        <button class="sun-btn" id="theme-btn" title="تغيير المظهر">
+            <i class="fa-regular fa-sun"></i>
+        </button>
+        <div class="header-title">
+            <h1>مهامي اليومية</h1>
+            <p>نظم وقتك بإنتاجية عالية</p>
+        </div>
+        <div class="check-badge">
+            <i class="fa-solid fa-check"></i>
+        </div>
+    </header>
+
+    
+    <div class="card-body">
+        
+        <form id="todo-form" class="input-container">
+            <input type="text" id="todo-input" placeholder="ما هي مهمتك القادمة؟..." required autocomplete="off">
+            <button type="submit" id="add-btn">+ إضافة</button>
+        </form>
+
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="بحث في المهام...">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="active">المتبقية</button>
+            <button class="filter-btn" data-filter="completed">المكتملة</button>
+        </div>
+        
+    
+        <ul id="todo-list" class="todo-list">
+            
+        </ul>
+
+        
+        <footer class="footer">
+            <button id="clear-completed-btn" class="clear-btn">
+                <i class="fa-regular fa-trash-can"></i> مسح المكتملة
+            </button>
+            <span id="items-left" class="items-count">2 مهام متبقية</span>
+        </footer>
+    </div>
+</div>
+
+<script src="assest/script.js"></script>
+</body>
+</html>

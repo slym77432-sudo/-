@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+* { margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+       font-family: 'Tajawal', sans-serif; }
+body { background-color: #0b1120;
+     min-height: 100vh; 
+     display: flex;
+      justify-content: center;
+       align-items: center; 
+       padding: 20px; }
+.card-container { width: 100%; 
+    max-width: 420px; 
+    background-color: #1a2332;
+     border-radius: 20px;
+      overflow: hidden;
+       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        border: 1px solid #283548; }
+.header { background: linear-gradient(135deg, #5b51d8, #4a63ee); 
+    padding: 22px 20px; 
+    display: flex; 
+    justify-content: space-between;
+     align-items: center; }
+.sun-btn { background: rgba(255, 255, 255, 0.15); 
+    border: none;
+     color: #facc15; 
+     width: 38px; 
+     height: 38px;
+      border-radius: 10px; 
+      cursor: pointer; 
+      font-size: 1.1rem; 
+      display: flex; 
+      justify-content: center;
+       align-items: center;
+        transition: 0.3s; }
+.sun-btn:hover { background: rgba(255, 255, 255, 0.25); }
+.header-title { text-align: center;
+     color: #ffffff; }
+.header-title h1 { font-size: 1.35rem;
+     font-weight: 700; }
+.header-title p { font-size: 0.78rem;
+     opacity: 0.85;
+      margin-top: 2px; }
+.check-badge { background: rgba(255, 255, 255, 0.2);
+     color: #ffffff;
+      width: 38px;
+       height: 38px;
+        border-radius: 10px;
+         display: flex; 
+         justify-content: center;
+          align-items: center;
+           font-size: 1.1rem; }
+.card-body { padding: 20px; 
+    display: flex; 
+    flex-direction: column;
+     gap: 14px; }
+.input-container { background-color: #121927;
+     border: 1px solid #283548;
+      border-radius: 12px; 
+      padding: 5px 6px; 
+      display: flex;
+       align-items: center; }
+.input-container input { background: transparent;
+     border: none;
+      outline: none; 
+      color: #ffffff;
+       padding: 10px 12px;
+        flex: 1;
+         font-size: 0.9rem; }
+.input-container input::placeholder { color: #64748b; }
+#add-btn { background-color: #5551f3;
+     color: #ffffff; 
+     border: none;
+      padding: 10px 20px;
+       border-radius: 9px; 
+       font-weight: 700;
+        font-size: 0.9rem; 
+        cursor: pointer;
+         transition: 0.2s; }
+#add-btn:hover { background-color: #433ee2; }
+.search-container { position: relative; }
+.search-container input { width: 100%; 
+    background-color: #121927;
+     border: 1px solid #283548;
+      border-radius: 10px; 
+      padding: 11px 40px 11px 15px;
+       color: #ffffff;
+        font-size: 0.88rem;
+         outline: none; }
+.search-container input::placeholder { color: #64748b; }
+.search-icon { position: absolute;
+     right: 14px; 
+     top: 50%;
+      transform: translateY(-50%);
+       color: #64748b; 
+       font-size: 0.95rem; }
+.filters { background-color: #121927; 
+    border: 1px solid #283548; 
+    border-radius: 10px;
+     display: flex;
+      padding: 4px; }
+.filter-btn { flex: 1;
+     background: transparent;
+      border: none;
+       color: #94a3b8; 
+       padding: 8px 0; 
+       font-size: 0.85rem;
+        font-weight: 500;
+         border-radius: 7px; 
+         cursor: pointer;
+          transition: 0.2s;
+         }
+.filter-btn.active { background-color: #232d3f;
+     color: #5551f3;
+      font-weight: 700; }
+.todo-list { list-style: none;
+     display: flex;
+      flex-direction: column;
+       gap: 10px;
+        margin-top: 2px; }
+.todo-item { background-color: #121927; 
+    border: 1px solid #283548;
+     border-radius: 12px;
+      padding: 14px;
+       display: flex; 
+       align-items: center;
+        justify-content: space-between; }
+.todo-text { color: #e2e8f0; 
+    font-size: 0.92rem;
+     flex: 1;
+      text-align: right; 
+      padding: 0 12px; }
+.todo-item.completed .todo-text { text-decoration: line-through;
+     color: #64748b; }
+.custom-checkbox { width: 22px;
+     height: 22px;
+      border: 2px solid #334155;
+       border-radius: 6px; 
+       cursor: pointer;
+        display: flex;
+         justify-content: center;
+          align-items: center;
+           color: transparent;
+            transition: 0.2s; }
+.todo-item.completed .custom-checkbox { background-color: #10b981;
+     border-color: #10b981;
+      color: #ffffff; }
+.delete-btn { background: transparent;
+     border: none;
+      color: #64748b;
+       cursor: pointer;
+        font-size: 0.95rem;
+         transition: 0.2s; }
+.delete-btn:hover { color: #ef4444; }
+.footer { display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+     padding-top: 10px;
+      font-size: 0.82rem;
+       color: #64748b; }
+       clear-btn { background:
+         transparent; border: none;
+          color: #64748b; 
+          cursor: pointer;
+           display: flex;
+            align-items: center;
+             gap: 5px;
+              font-size: 0.82rem;
+               transition: 0.2s; }
+.clear-btn:hover { color: #ef4444; }
